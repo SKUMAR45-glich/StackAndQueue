@@ -12,5 +12,6 @@ namespace StackandQueue
         {
             this.data = data;
         }
+
     }
 }
