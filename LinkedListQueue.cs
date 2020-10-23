@@ -27,6 +27,16 @@ namespace StackandQueue
 
         }
 
+        internal void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Stack is empty, Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped is {0} ", this.head.data);
+            this.head = this.head.next;
+        }
         internal void Display()
         {
             Node temp = this.head;
